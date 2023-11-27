@@ -31,13 +31,23 @@ we would expect multiplication(2, 0) will return 0
 Example: concatOdds([3, 2, 1], [9, 1, 1, 1, 4, 15, -1])
 ...should result in [-1, 1, 3, 9, 15]
 
-# Expectattion
+# Expectation
 
-1. the function concatOdds will concatenate the input arrays and write the resultant array in ascending order.
+1. the function concatOdds will correctly concatenate the two arrays and return 
 2. The function should only return odd numbers
 3. The function should return the array in ascending order
 4. The function takes 2 arguments
 5. The 2 arguments are 2 arrays with integers
- 
+6. The function should handle cases where one or both input arrays are empty.
+7.  If neither array contains odd numbers (even numbers), the function should return an empty array.
 
+# Test Specs
+1. Expect concatOdds([1, 4, 5], [2, 3, 6]) to return [1,3,5];
+2. Except concatOdds([9, 2, 7], [5, 4, 6]) to return [2,5,7,9];
+3. Except concatOdds([], [2, 4, 6]) to return [];
+4. Except concatOdds([2, 4, 6], [8, 10, 12]) to return [];
+5. Except concatOdds([1, 3, 5, 5], [2, 4, 6, 7]) to return [1,3,5,7];
+
+ 
+ 
 
